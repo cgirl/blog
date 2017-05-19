@@ -4,7 +4,7 @@ date: 2017-04-11 08:17
 tags: nginx 学习 负载均衡 配置
 ---
 
-# nginx配置(index)
+# nginx配置
 ### 文件路径配置
 - 访问首页
 > 语法：   index file1 file2 file3 ... ;   
@@ -44,3 +44,26 @@ tags: nginx 学习 负载均衡 配置
 - 建立TCP链接预配内存池初始化大小
 > 语法：   connect_pool_size size;  
 > 配置块： http，server
+
+- 请求预配内存池大小
+> 语法:   request_pool_size size;
+> 配置块: http, server
+
+### 网络连接的设置
+- 读取HTTP头部的超时时间
+> 语法: client_header_timeout time;（默认单位:秒）  
+> 配置块: http, server, location
+
+- 读取HTTP包体的超时时间
+> 语法: client_body_timeout time;（默认单位:秒）  
+> 配置块: http, server, location
+
+- 发送响应的超时时间
+> 语法: send_timeout time;
+> 配置块: http, server, location
+
+- 发送RST包来重置连接
+> 语法: reset_timeout_connection on|off;
+> 配置块: http, server, location
+
+
