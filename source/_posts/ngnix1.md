@@ -1,6 +1,6 @@
 ---
 title: nginx之旅
-date: '2017-05-19 21:17'
+date: '2017-06-23 21:17'
 tags: nginx 学习 负载均衡 配置
 ---
 
@@ -133,28 +133,28 @@ tags: nginx 学习 负载均衡 配置
 - 默认MIME type
  > 语法: default_type MIME-type;  
  > 配置块: http, server, location
- 
+
 - MIME type散列桶占用内存的大小
  > 语法: types_hash_bucket_size size;  
  > 配置块: http, server, location
- 
+
 - MIME type散列桶占用最大内存的大小
  > 语法: type_hash_max_size size;  
  > 配置块: http, server, location
- 
+
 ## 对客户端请求的限制
 - 按HTTP方法名限制用户请求
  > 语法: limit_except method ... {...};  
  > 配置块: location
- 
+
 - HTTP请求包体的最大值
  > 语法: clinet_max_body_size size;
  > 配置块: http、server、location
- 
+
 - 对请求的速度
  > 语法: limit_rate speed;
  > 配置块: http、server、location、if
- 
+
 - 对请求限速的延迟市场
 > 语法: limit_rate_after time;  
 > 配置块: http、server、location、if
@@ -228,10 +228,12 @@ tags: nginx 学习 负载均衡 配置
 > 配置块: http, server, location
 
 ## ngx_http_core_module模块提供的变量
-图片========
+![访问上游服务器时可使用的变量](image/访问上游服务器时可使用的变量.png)
 
 ## 反向代理服务器的基本原理
-图片=======
+基本原来的流程图如下：
+
+![反向代理服务器转发请求流程](image/反向代理服务器转发请求流程.png)
 
 ## 负载均衡的基本配置
 - upstream块
@@ -246,11 +248,12 @@ tags: nginx 学习 负载均衡 配置
 > 语法: ip_hash;  
 > 配置块: upstream
 
-- 样例:  
+- 样例:
+```
 upstream tianshenjr {  
 
-    <<<<< ip_hash; 说明:与weight不可共存;>>>> 
-     
+    /*ip_hash; 说明:与weight不可共存;*/
+
     server dev.tianshenjr.com weight=4;  
     server 127.0.0.1:8080 max_fails=3 fail_timeout=30s;  
     server unix:/tmp/api.tianshenjr.com;  
@@ -260,6 +263,7 @@ server {
         proxy_pass http://www.tianshenjr.com  
     }  
 }
+```
 
 - 记录日志时支持的变量
 
@@ -300,5 +304,17 @@ server {
 
 扩展阅读
    http://wiki.nginx.org/Modules
-   
 
+
+# 开发HTTP模块
+## 如何调用HTTP模块
+![http模块调用简化流程](image/nginx http模块调用简化流程.png)
+
+## 准备工作
+- 模块命名:  
+按规范命名第一个模块的名字: ngx_http_mytest_module
+
+- 文件命令:
+源码一般使用C开发（或C++）,该模块命名为: ngx_http_mytest_module.c
+
+- configure脚本执行时的ngx_addon_name变量的名称：ngx_http_mytest_module
