@@ -128,4 +128,177 @@ tags: nginx 学习 负载均衡 配置
 
 - MIME type与文件扩展映射
 > 语法： type {...};<br>
-配置块： http, server, location
+> 配置块： http, server, location
+
+- 默认MIME type
+ > 语法: default_type MIME-type;  
+ > 配置块: http, server, location
+ 
+- MIME type散列桶占用内存的大小
+ > 语法: types_hash_bucket_size size;  
+ > 配置块: http, server, location
+ 
+- MIME type散列桶占用最大内存的大小
+ > 语法: type_hash_max_size size;  
+ > 配置块: http, server, location
+ 
+## 对客户端请求的限制
+- 按HTTP方法名限制用户请求
+ > 语法: limit_except method ... {...};  
+ > 配置块: location
+ 
+- HTTP请求包体的最大值
+ > 语法: clinet_max_body_size size;
+ > 配置块: http、server、location
+ 
+- 对请求的速度
+ > 语法: limit_rate speed;
+ > 配置块: http、server、location、if
+ 
+- 对请求限速的延迟市场
+> 语法: limit_rate_after time;  
+> 配置块: http、server、location、if
+
+
+## 文件操作的优化
+- sendfile系统调用
+> 语法: sendfile on|off;  
+> 配置块: http、server、location
+
+- AIO系统调用
+> 语法: aio on|off;  
+> 配置块: http, server, location
+
+- directio(linux系统以O_DIRECT方式只读文件,缓冲区大小)
+> 语法: directio size|off;  
+> 配置块: http, server, location
+
+- directio方式读取文件时的对齐方式
+> 语法: directio_alignment size;  
+> 配置块: http, server, location
+
+- 打开缓存功能
+> 语法: open_file_cache max=N[inactive=time]|off;  
+> 配置块: http, server, location
+
+- 是否缓存打开文件错误信息
+> 语法: open_file_cache_errors on|off;  
+> 配置块: http, server, location
+
+- 不被淘汰的最小次数
+> 语法: open_file_cache_min_users number;  
+> 配置块: http, server, location
+
+- 检验缓存中元素有效性的频率
+> 语法: open_file_cache_valid time;  
+> 配置块: http, server, location
+
+
+## 对客户端请求的特殊处理
+- 忽略不合法的HTTP头部
+> 语法: ignore_invalid_headers on|off;  
+> 配置块: http, server
+
+- HTTP头部是否允许下划线
+> 语法: underscores_in_headers on|off;  
+> 配置块: http, server, location
+
+- 对If-Modified-Since头部的策略处理
+> 语法: if_modified_since [off|exact|before];  
+> 配置块: http, server, location
+
+- 文件未找到时是否记录到error日志
+> 语法: log_not_fount off|on;  
+> 配置块: http, server, location
+
+- 是否匹配相邻的'/'
+> 语法: merge_slashes on|off;  
+> 配置块: http, server, location
+
+- DNS解析地址
+> 语法: resolver address ...;  
+> 配置块: http, server, location
+
+- DNS解析地址超时时间
+> 语法: resolver_timeout time;  
+> 配置块: http, server, location
+
+- 返回错误页面时,是否在Server中注明nginx版本
+> 语法: server_tokens on|off;  
+> 配置块: http, server, location
+
+## ngx_http_core_module模块提供的变量
+图片========
+
+## 反向代理服务器的基本原理
+图片=======
+
+## 负载均衡的基本配置
+- upstream块
+> 语法: upstream name {...};  
+> 配置块: http  
+
+- server  
+> 语法: server name [parameters];  
+> 配置块: upstream
+
+- ip_hash
+> 语法: ip_hash;  
+> 配置块: upstream
+
+- 样例:  
+upstream tianshenjr {  
+
+    <<<<< ip_hash; 说明:与weight不可共存;>>>> 
+     
+    server dev.tianshenjr.com weight=4;  
+    server 127.0.0.1:8080 max_fails=3 fail_timeout=30s;  
+    server unix:/tmp/api.tianshenjr.com;  
+}  
+server {  
+    location / {  
+        proxy_pass http://www.tianshenjr.com  
+    }  
+}
+
+- 记录日志时支持的变量
+
+
+## 反向代理的基本配置
+
+- proxy_pass
+> 语法: proxy_pass URL;  
+> 配置块: location, if
+
+- proxy_method
+> 语法: proxy_method method;  
+> 配置块: http, server, location
+
+- proxy_hide_header
+> 语法: proxy_hide_header the_header;  
+> 配置块: http, server, location
+
+- proxy_pass_header
+> 语法: proxy_pass_header the_header;  
+> 配置块: http, server, location
+
+- proxy_pass_request_body
+> 语法: proxy_pass_request_body on|off;  
+> 配置块: http, server, location
+
+- proxy_pass_request_headers
+> 语法: proxy_pass_request_headers on|off;  
+> 配置块: http, server, location
+
+- proxy_redirect
+> 语法: proxy_redirect [default|off|redirect replacement];  
+> 配置块: http, server, location
+
+- proxy_next_upstream
+> 语法: proxy_next_upstream [error|timeout|invalid_header|http_500|http_502|http_503|http_504|http_404|off];
+> 配置块: http, server, location
+
+扩展阅读
+   http://wiki.nginx.org/Modules
+   
+
