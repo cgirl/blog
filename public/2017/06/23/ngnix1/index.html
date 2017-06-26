@@ -118,7 +118,7 @@ HTTP错误码重定向页面
 <meta property="og:image" content="https://cgirl.github.io/image/访问上游服务器时可使用的变量.png">
 <meta property="og:image" content="https://cgirl.github.io/image/反向代理服务器转发请求流程.png">
 <meta property="og:image" content="https://cgirl.github.io/image/nginx http模块调用简化流程.png">
-<meta property="og:updated_time" content="2017-06-24T07:40:49.774Z">
+<meta property="og:updated_time" content="2017-06-24T08:29:49.092Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nginx之旅">
 <meta name="twitter:description" content="nginx配置文件路径配置
@@ -614,9 +614,9 @@ HTTP错误码重定向页面
 </blockquote>
 </li>
 </ul>
-<h2 id="ngx-http-core-module模块提供的变量"><a href="#ngx-http-core-module模块提供的变量" class="headerlink" title="ngx_http_core_module模块提供的变量"></a>ngx_http_core_module模块提供的变量</h2><p><img src="image/访问上游服务器时可使用的变量.png" alt="访问上游服务器时可使用的变量"></p>
+<h2 id="ngx-http-core-module模块提供的变量"><a href="#ngx-http-core-module模块提供的变量" class="headerlink" title="ngx_http_core_module模块提供的变量"></a>ngx_http_core_module模块提供的变量</h2><p><img src="/image/访问上游服务器时可使用的变量.png" alt="访问上游服务器时可使用的变量"></p>
 <h2 id="反向代理服务器的基本原理"><a href="#反向代理服务器的基本原理" class="headerlink" title="反向代理服务器的基本原理"></a>反向代理服务器的基本原理</h2><p>基本原来的流程图如下：</p>
-<p><img src="image/反向代理服务器转发请求流程.png" alt="反向代理服务器转发请求流程"></p>
+<p><img src="/image/反向代理服务器转发请求流程.png" alt="反向代理服务器转发请求流程"></p>
 <h2 id="负载均衡的基本配置"><a href="#负载均衡的基本配置" class="headerlink" title="负载均衡的基本配置"></a>负载均衡的基本配置</h2><ul>
 <li><p>upstream块</p>
 <blockquote>
@@ -634,7 +634,7 @@ HTTP错误码重定向页面
 </blockquote>
 </li>
 <li><p>样例:</p>
-<figure class="highlight roboconf"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">upstream tianshenjr &#123;  </div><div class="line"></div><div class="line">    /*<span class="attribute">ip_hash; 说明</span>:与weight不可共存;*/</div><div class="line"></div><div class="line">    <span class="attribute">server dev.tianshenjr.com weight=4;  </span></div><div class="line">    server 127.0.0.1:8080 max_fails=3 fail_timeout=30s;  </div><div class="line">    <span class="attribute">server unix</span>:/tmp/api<span class="variable">.tianshenjr</span><span class="variable">.com</span>;  </div><div class="line">&#125;  </div><div class="line">server &#123;  </div><div class="line">    <span class="attribute">location / &#123;  </span></div><div class="line">        proxy_pass http://www<span class="variable">.tianshenjr</span><span class="variable">.com</span>  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">upstream</span> tianshenjr &#123;  </div><div class="line"></div><div class="line">    <span class="comment">#ip_hash; 说明:与weight不可共存;</span></div><div class="line"></div><div class="line">    <span class="attribute">server</span> dev.tianshenjr.com weight=<span class="number">4</span>;  </div><div class="line">    <span class="attribute">server</span> <span class="number">127.0.0.1:8080</span> max_fails=<span class="number">3</span> fail_timeout=<span class="number">30s</span>;  </div><div class="line">    <span class="attribute">server</span> unix:/tmp/api.tianshenjr.com;  </div><div class="line">&#125;  </div><div class="line"><span class="section">server</span> &#123;  </div><div class="line">    <span class="attribute">location</span> / &#123;  </div><div class="line">        <span class="attribute">proxy_pass</span> http://www.tianshenjr.com  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>记录日志时支持的变量</p>
 </li>
@@ -682,7 +682,7 @@ HTTP错误码重定向页面
 </li>
 </ul>
 <p>扩展阅读<br>   <a href="http://wiki.nginx.org/Modules" target="_blank" rel="external">http://wiki.nginx.org/Modules</a></p>
-<h1 id="开发HTTP模块"><a href="#开发HTTP模块" class="headerlink" title="开发HTTP模块"></a>开发HTTP模块</h1><h2 id="如何调用HTTP模块"><a href="#如何调用HTTP模块" class="headerlink" title="如何调用HTTP模块"></a>如何调用HTTP模块</h2><p><img src="image/nginx http模块调用简化流程.png" alt="http模块调用简化流程"></p>
+<h1 id="开发HTTP模块"><a href="#开发HTTP模块" class="headerlink" title="开发HTTP模块"></a>开发HTTP模块</h1><h2 id="如何调用HTTP模块"><a href="#如何调用HTTP模块" class="headerlink" title="如何调用HTTP模块"></a>如何调用HTTP模块</h2><p><img src="/image/nginx http模块调用简化流程.png" alt="http模块调用简化流程"></p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
 <li><p>模块命名:<br>按规范命名第一个模块的名字: ngx_http_mytest_module</p>
 </li>
