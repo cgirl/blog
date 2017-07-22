@@ -228,12 +228,12 @@ tags: nginx 学习 负载均衡 配置
 > 配置块: http, server, location
 
 ## ngx_http_core_module模块提供的变量
-![访问上游服务器时可使用的变量](/image/访问上游服务器时可使用的变量.png)
+![访问上游服务器时可使用的变量](../image/访问上游服务器时可使用的变量.png)
 
 ## 反向代理服务器的基本原理
 基本原来的流程图如下：
 
-![反向代理服务器转发请求流程](/image/反向代理服务器转发请求流程.png)
+![反向代理服务器转发请求流程](../image/反向代理服务器转发请求流程.png)
 
 ## 负载均衡的基本配置
 - upstream块
@@ -308,7 +308,44 @@ server {
 
 # 开发HTTP模块
 ## 如何调用HTTP模块
-![http模块调用简化流程](/image/nginx http模块调用简化流程.png)
+![http模块调用简化流程](../image/nginx http模块调用简化流程.png)
+
+## 类型封装
+- 整型
+```C
+typedef intptr_t ngx_int_t;
+typedef uintptr_t ngx_uint_t;
+```
+
+- ngx_str_t 数据结构
+```C
+typedef struct{
+    size_t      len;
+    u_char      *data;
+} ngx_str_t;
+```
+
+- ngx_list_t 数据结构
+```C
+typedef struct ngx_list_part_s ngx_list_part_t;
+
+struct ngx_list _part_s{
+    void                *elts;
+    ngx_uint_t          nelts;
+    ngx_list_part_t     *next;
+};
+
+typedef struct{
+    ngx_list_part_t     *last;
+    ngx_list_part_t     part;
+    size_t              size;
+    ngx_unit_t          nalloc;
+    ngx_pool_t          *pool;
+} ngx_list_t;
+```
+- ngx_table_elt_t 数据结构
+- ngx_buf_t 数据结构
+- ngx_chain_t 数据结构
 
 ## 准备工作
 - 模块命名:  
@@ -318,3 +355,4 @@ server {
 源码一般使用C开发（或C++）,该模块命名为: ngx_http_mytest_module.c
 
 - configure脚本执行时的ngx_addon_name变量的名称：ngx_http_mytest_module
+
