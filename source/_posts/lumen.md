@@ -2,6 +2,7 @@
 title: lumen建立API项目  
 date: '2017-07-08 16:18'  
 tags: php 框架 lumen API
+categories: lumen框架
 ---
 #lumen环境搭建（5.4.X 版本）
 
