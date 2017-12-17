@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[区块链:定义未来金融与经济新格局]]></title>
+    <url>%2F2017%2F12%2F14%2Fqukuailian%2F</url>
+    <content type="text"><![CDATA[尝试定义信用 - 信用与货币 目前世界上几乎所有国家的货币都已是信用货币。信用货币是货币发展中的现代形态,不再代表任何贵金属,并且其本身价值远远低于货币价值,已经和商品属性彻底脱钩。 在实物货币阶段,货币以实物商品的形式表现出来。从表面上看货币是有价值的商品,但是,人们出卖商品换取实物货币时需要的不是实物货币本身,而是实物货币交换其他商品的能力,即购买力。换句话说,人们之所以能接受实物货币,本质上并不是因为实物货币是有价值的商品,而是因为其相信实物货币是信用的象征,它可以提供一般购买力。所以无论是实物货币还是信用货币,信用都是货币更为本职的属性。也可以说,信用是货币的创造者。]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>读书摘录 区块链</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nginx配置]]></title>
+    <url>%2F2017%2F07%2F13%2Fngnix1%2F</url>
+    <content type="text"><![CDATA[nginx配置文件路径配置 访问首页 语法： index file1 file2 file3 … ;配置块： http, server, location HTTP错误码重定向页面 语法： error_page code[code1 code2 …][=|answer_code=]uri|@named_location;配置块： http, server, location, if 是否允许递归使用error_page 语法： recursive_error_page [on|off];配置块： http，server，location try_files 内存及磁盘资源分配 HTTP包体只存储到磁盘文件中 语法： client_body_only_in_file on|off|clean;配置块： http，server，location HTTP包体尽量写到一个内存buffer中 语法： client_body_in_single_buffer size;配置块： http，server 存储超大HTTP头部的内存buffer的大小 语法： large_client_header_buffers number size;配置块： http，server 存储HTTP包体的内存buffer的大小 语法： large_client_body_buffer_size size;配置块： http，server，location HTTP的临时存放目录 语法： client_body_temp_path dirpath[level1[level2[level2]]];配置块： http，server，location 建立TCP链接预配内存池初始化大小 语法： connect_pool_size size;配置块： http，server 请求预配内存池大小 语法: request_pool_size size;配置块: http, server 网络连接的设置 读取HTTP头部的超时时间 语法: client_header_timeout time;（默认单位:秒）配置块: http, server, location 读取HTTP包体的超时时间 语法: client_body_timeout time;（默认单位:秒）配置块: http, server, location 发送响应的超时时间 语法: send_timeout time;配置块: http, server, location 发送RST包来重置连接 语法: reset_timeout_connection on|off;配置块: http, server, location 关闭用户的连接方式 语法： lingering_close on|off|always配置块： http, server, location 关闭用户的链接方式的延迟时间 语法： lingering_time time;配置块： http, server, location 无数据情况下关闭用户链接的超时时间 语法： lingering_timeout time;配置块： http, server, location 禁用多个http请求复用同一个http长链接（禁用keepalive功能） 语法： keepalive_disable [msie6|safria|none]…;配饰块： http, server, location keepalive超时时间 语法： keepalive_timeout time;配置块： http, server, location 一个keepalive长连接上允许承载的最大请求数 语法： keepalive_requests n;配置块： http, server, location 对keepalive是否启用TCP_NODELAY选项 语法： tcp_nodelay on|off;配置块： http, server, location 是否开启FreeBSD系统上的TCP_NOPUSH或linux系统上的TCP_CORK功能 语法： tcp_nopush on|off;配置块： http, server, location MIME类型的设置 MIME type与文件扩展映射 语法： type {…};配置块： http, server, location 默认MIME type 语法: default_type MIME-type;配置块: http, server, location MIME type散列桶占用内存的大小 语法: types_hash_bucket_size size;配置块: http, server, location MIME type散列桶占用最大内存的大小 语法: type_hash_max_size size;配置块: http, server, location 对客户端请求的限制 按HTTP方法名限制用户请求 语法: limit_except method … {…};配置块: location HTTP请求包体的最大值 语法: clinet_max_body_size size;配置块: http、server、location 对请求的速度 语法: limit_rate speed;配置块: http、server、location、if 对请求限速的延迟市场 语法: limit_rate_after time;配置块: http、server、location、if 文件操作的优化 sendfile系统调用 语法: sendfile on|off;配置块: http、server、location AIO系统调用 语法: aio on|off;配置块: http, server, location directio(linux系统以O_DIRECT方式只读文件,缓冲区大小) 语法: directio size|off;配置块: http, server, location directio方式读取文件时的对齐方式 语法: directio_alignment size;配置块: http, server, location 打开缓存功能 语法: open_file_cache max=N[inactive=time]|off;配置块: http, server, location 是否缓存打开文件错误信息 语法: open_file_cache_errors on|off;配置块: http, server, location 不被淘汰的最小次数 语法: open_file_cache_min_users number;配置块: http, server, location 检验缓存中元素有效性的频率 语法: open_file_cache_valid time;配置块: http, server, location 对客户端请求的特殊处理 忽略不合法的HTTP头部 语法: ignore_invalid_headers on|off;配置块: http, server HTTP头部是否允许下划线 语法: underscores_in_headers on|off;配置块: http, server, location 对If-Modified-Since头部的策略处理 语法: if_modified_since [off|exact|before];配置块: http, server, location 文件未找到时是否记录到error日志 语法: log_not_fount off|on;配置块: http, server, location 是否匹配相邻的’/‘ 语法: merge_slashes on|off;配置块: http, server, location DNS解析地址 语法: resolver address …;配置块: http, server, location DNS解析地址超时时间 语法: resolver_timeout time;配置块: http, server, location 返回错误页面时,是否在Server中注明nginx版本 语法: server_tokens on|off;配置块: http, server, location ngx_http_core_module模块提供的变量 反向代理服务器的基本原理基本原来的流程图如下： 负载均衡的基本配置 upstream块 语法: upstream name {…};配置块: http server 语法: server name [parameters];配置块: upstream ip_hash 语法: ip_hash;配置块: upstream 样例: 12345678910111213upstream tianshenjr &#123; #ip_hash; 说明:与weight不可共存; server dev.tianshenjr.com weight=4; server 127.0.0.1:8080 max_fails=3 fail_timeout=30s; server unix:/tmp/api.tianshenjr.com; &#125; server &#123; location / &#123; proxy_pass http://www.tianshenjr.com &#125; &#125; 记录日志时支持的变量 反向代理的基本配置 proxy_pass 语法: proxy_pass URL;配置块: location, if proxy_method 语法: proxy_method method;配置块: http, server, location proxy_hide_header 语法: proxy_hide_header the_header;配置块: http, server, location proxy_pass_header 语法: proxy_pass_header the_header;配置块: http, server, location proxy_pass_request_body 语法: proxy_pass_request_body on|off;配置块: http, server, location proxy_pass_request_headers 语法: proxy_pass_request_headers on|off;配置块: http, server, location proxy_redirect 语法: proxy_redirect [default|off|redirect replacement];配置块: http, server, location proxy_next_upstream 语法: proxy_next_upstream [error|timeout|invalid_header|http_500|http_502|http_503|http_504|http_404|off];配置块: http, server, location 扩展阅读 http://wiki.nginx.org/Modules 开发HTTP模块如何调用HTTP模块 类型封装 整型 12typedef intptr_t ngx_int_t;typedef uintptr_t ngx_uint_t; ngx_str_t 数据结构 1234typedef struct&#123; size_t len; u_char *data;&#125; ngx_str_t; ngx_list_t 数据结构 123456789101112131415typedef struct ngx_list_part_s ngx_list_part_t;struct ngx_list _part_s&#123; void *elts; ngx_uint_t nelts; ngx_list_part_t *next;&#125;;typedef struct&#123; ngx_list_part_t *last; ngx_list_part_t part; size_t size; ngx_unit_t nalloc; ngx_pool_t *pool;&#125; ngx_list_t; ngx_table_elt_t 数据结构 ngx_buf_t 数据结构 ngx_chain_t 数据结构]]></content>
+      <categories>
+        <category>nginx</category>
+      </categories>
+      <tags>
+        <tag>nginx 负载均衡 配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[lumen建立API项目]]></title>
+    <url>%2F2017%2F07%2F08%2Flumen%2F</url>
+    <content type="text"><![CDATA[#lumen环境搭建（5.4.X 版本） composer及lumen安装环境: mac or linux 使用如下命令进行comoser的安装: curl -sS https://getcomposer.org/installer | php mv composer.phar /usr/local/bin/ 输入composer回车,能正常展示composer的版本及使用方法,即安装成功 使用如下命令进行lumen的项目创建及环境配置 composer create-project –prefer-dist laravel/lumen 项目名称说明:1) 时间可能会有些长,请耐心等待,如果长时间依然没有创建成功。2) 请更换国内镜像或升级composer更换国内镜像: composer config -g repo.packagist composer https://packagist.phpcomposer.com）升级composer: composer selfupdate 配置数据库信息:lumen的项目配置信息都保存在.env文件中,修改相应的数据库配置信息: 123456DB_CONNECTION=mysqlDB_HOST=127.0.0.1 【项目的mysql数据库服务器地址】DB_PORT=3306 【mysql对应的端口号】DB_DATABASE=mabei 【mysql的数据库名称】DB_USERNAME=root 【mysql的用户名】DB_PASSWORD=root 【mysql的密码】]]></content>
+      <categories>
+        <category>lumen框架</category>
+      </categories>
+      <tags>
+        <tag>php 框架 lumen API</tag>
+      </tags>
+  </entry>
+</search>

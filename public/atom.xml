@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>junely-渡渡</title>
+  
+  <subtitle>学习笔记，乐于分享，每天进步一点点，坚持是成功的法宝。</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://cgirl.github.io/"/>
+  <updated>2017-12-14T14:57:54.805Z</updated>
+  <id>https://cgirl.github.io/</id>
+  
+  <author>
+    <name>junelyy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>区块链:定义未来金融与经济新格局</title>
+    <link href="https://cgirl.github.io/2017/12/14/qukuailian/"/>
+    <id>https://cgirl.github.io/2017/12/14/qukuailian/</id>
+    <published>2017-12-14T14:44:36.000Z</published>
+    <updated>2017-12-14T14:57:54.805Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>尝试定义信用 - 信用与货币</strong></p><p>目前世界上几乎所有国家的货币都已是信用货币。信用货币是货币发展中的现代形态,不再代表任何贵<br>金属,并且其本身价值远远低于货币价值,已经和商品属性彻底脱钩。</p><p>在实物货币阶段,货币以实物商品的形式表现出来。从表面上看货币是有价值的商品,但是,人们出卖商<br>品换取实物货币时需要的不是实物货币本身,而是实物货币交换其他商品的能力,即购买力。换句话说,<br>人们之所以能接受实物货币,本质上并不是因为实物货币是有价值的商品,而是因为其相信实物货币是信用<br>的象征,它可以提供一般购买力。所以无论是实物货币还是信用货币,信用都是货币更为本职的属性。也<br>可以说,信用是货币的创造者。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;尝试定义信用 - 信用与货币&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前世界上几乎所有国家的货币都已是信用货币。信用货币是货币发展中的现代形态,不再代表任何贵&lt;br&gt;金属,并且其本身价值远远低于货币价值,已经和商品属性彻底脱钩。&lt;/p&gt;
+&lt;p&gt;在实物货币阶段,货币
+      
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="https://cgirl.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="读书摘录 区块链" scheme="https://cgirl.github.io/tags/%E8%AF%BB%E4%B9%A6%E6%91%98%E5%BD%95-%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx配置</title>
+    <link href="https://cgirl.github.io/2017/07/13/ngnix1/"/>
+    <id>https://cgirl.github.io/2017/07/13/ngnix1/</id>
+    <published>2017-07-13T13:17:00.000Z</published>
+    <updated>2017-12-09T12:23:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h1><h2 id="文件路径配置"><a href="#文件路径配置" class="headerlink" title="文件路径配置"></a>文件路径配置</h2><ul><li><p>访问首页</p><blockquote><p>语法： index file1 file2 file3 … ;<br><br>配置块： http, server, location</p></blockquote></li></ul><a id="more"></a><ul><li><p>HTTP错误码重定向页面</p><blockquote><p>语法： error_page code[code1 code2 …][=|answer_code=]uri|@named_location;<br><br>配置块： http, server, location, if</p></blockquote></li><li><p>是否允许递归使用error_page</p><blockquote><p>语法： recursive_error_page [on|off];<br><br>配置块： http，server，location</p></blockquote></li><li><p>try_files</p></li></ul><h2 id="内存及磁盘资源分配"><a href="#内存及磁盘资源分配" class="headerlink" title="内存及磁盘资源分配"></a>内存及磁盘资源分配</h2><ul><li><p>HTTP包体只存储到磁盘文件中</p><blockquote><p>语法： client_body_only_in_file on|off|clean;<br><br>配置块： http，server，location</p></blockquote></li><li><p>HTTP包体尽量写到一个内存buffer中</p><blockquote><p>语法： client_body_in_single_buffer size;<br><br>配置块： http，server</p></blockquote></li><li><p>存储超大HTTP头部的内存buffer的大小</p><blockquote><p>语法： large_client_header_buffers number size;<br><br>配置块： http，server</p></blockquote></li><li><p>存储HTTP包体的内存buffer的大小</p><blockquote><p>语法： large_client_body_buffer_size size;<br><br>配置块： http，server，location</p></blockquote></li><li><p>HTTP的临时存放目录</p><blockquote><p>语法： client_body_temp_path dirpath[level1[level2[level2]]];<br><br>配置块： http，server，location</p></blockquote></li><li><p>建立TCP链接预配内存池初始化大小</p><blockquote><p>语法： connect_pool_size size;<br><br>配置块： http，server</p></blockquote></li><li><p>请求预配内存池大小</p><blockquote><p>语法: request_pool_size size;<br><br>配置块: http, server</p></blockquote></li></ul><h2 id="网络连接的设置"><a href="#网络连接的设置" class="headerlink" title="网络连接的设置"></a>网络连接的设置</h2><ul><li><p>读取HTTP头部的超时时间</p><blockquote><p>语法: client_header_timeout time;（默认单位:秒）<br><br>配置块: http, server, location</p></blockquote></li><li><p>读取HTTP包体的超时时间</p><blockquote><p>语法: client_body_timeout time;（默认单位:秒）<br><br>配置块: http, server, location</p></blockquote></li><li><p>发送响应的超时时间</p><blockquote><p>语法: send_timeout time;<br><br>配置块: http, server, location</p></blockquote></li><li><p>发送RST包来重置连接</p><blockquote><p>语法: reset_timeout_connection on|off;<br><br>配置块: http, server, location</p></blockquote></li><li><p>关闭用户的连接方式</p><blockquote><p>语法： lingering_close on|off|always<br><br>配置块： http, server, location</p></blockquote></li><li><p>关闭用户的链接方式的延迟时间</p><blockquote><p>语法： lingering_time time;<br><br>配置块： http, server, location</p></blockquote></li><li><p>无数据情况下关闭用户链接的超时时间</p><blockquote><p>语法： lingering_timeout time;<br><br>配置块： http, server, location</p></blockquote></li><li><p>禁用多个http请求复用同一个http长链接（禁用keepalive功能）</p><blockquote><p>语法： keepalive_disable [msie6|safria|none]…;<br><br>配饰块： http, server, location</p></blockquote></li><li><p>keepalive超时时间</p><blockquote><p>语法： keepalive_timeout time;<br><br>配置块： http, server, location</p></blockquote></li><li><p>一个keepalive长连接上允许承载的最大请求数</p><blockquote><p>语法： keepalive_requests n;<br><br>配置块： http, server, location</p></blockquote></li><li><p>对keepalive是否启用TCP_NODELAY选项</p><blockquote><p>语法： tcp_nodelay on|off;<br><br>配置块： http, server, location</p></blockquote></li><li><p>是否开启FreeBSD系统上的TCP_NOPUSH或linux系统上的TCP_CORK功能</p><blockquote><p>语法： tcp_nopush on|off;<br><br>配置块： http, server, location</p></blockquote></li></ul><h2 id="MIME类型的设置"><a href="#MIME类型的设置" class="headerlink" title="MIME类型的设置"></a>MIME类型的设置</h2><ul><li><p>MIME type与文件扩展映射</p><blockquote><p>语法： type {…};<br><br>配置块： http, server, location</p></blockquote></li><li><p>默认MIME type</p><blockquote><p>语法: default_type MIME-type;<br>配置块: http, server, location</p></blockquote></li><li><p>MIME type散列桶占用内存的大小</p><blockquote><p>语法: types_hash_bucket_size size;<br>配置块: http, server, location</p></blockquote></li><li><p>MIME type散列桶占用最大内存的大小</p><blockquote><p>语法: type_hash_max_size size;<br>配置块: http, server, location</p></blockquote></li></ul><h2 id="对客户端请求的限制"><a href="#对客户端请求的限制" class="headerlink" title="对客户端请求的限制"></a>对客户端请求的限制</h2><ul><li><p>按HTTP方法名限制用户请求</p><blockquote><p>语法: limit_except method … {…};<br>配置块: location</p></blockquote></li><li><p>HTTP请求包体的最大值</p><blockquote><p>语法: clinet_max_body_size size;<br>配置块: http、server、location</p></blockquote></li><li><p>对请求的速度</p><blockquote><p>语法: limit_rate speed;<br>配置块: http、server、location、if</p></blockquote></li><li><p>对请求限速的延迟市场</p><blockquote><p>语法: limit_rate_after time;<br>配置块: http、server、location、if</p></blockquote></li></ul><h2 id="文件操作的优化"><a href="#文件操作的优化" class="headerlink" title="文件操作的优化"></a>文件操作的优化</h2><ul><li><p>sendfile系统调用</p><blockquote><p>语法: sendfile on|off;<br>配置块: http、server、location</p></blockquote></li><li><p>AIO系统调用</p><blockquote><p>语法: aio on|off;<br>配置块: http, server, location</p></blockquote></li><li><p>directio(linux系统以O_DIRECT方式只读文件,缓冲区大小)</p><blockquote><p>语法: directio size|off;<br>配置块: http, server, location</p></blockquote></li><li><p>directio方式读取文件时的对齐方式</p><blockquote><p>语法: directio_alignment size;<br>配置块: http, server, location</p></blockquote></li><li><p>打开缓存功能</p><blockquote><p>语法: open_file_cache max=N[inactive=time]|off;<br>配置块: http, server, location</p></blockquote></li><li><p>是否缓存打开文件错误信息</p><blockquote><p>语法: open_file_cache_errors on|off;<br>配置块: http, server, location</p></blockquote></li><li><p>不被淘汰的最小次数</p><blockquote><p>语法: open_file_cache_min_users number;<br>配置块: http, server, location</p></blockquote></li><li><p>检验缓存中元素有效性的频率</p><blockquote><p>语法: open_file_cache_valid time;<br>配置块: http, server, location</p></blockquote></li></ul><h2 id="对客户端请求的特殊处理"><a href="#对客户端请求的特殊处理" class="headerlink" title="对客户端请求的特殊处理"></a>对客户端请求的特殊处理</h2><ul><li><p>忽略不合法的HTTP头部</p><blockquote><p>语法: ignore_invalid_headers on|off;<br>配置块: http, server</p></blockquote></li><li><p>HTTP头部是否允许下划线</p><blockquote><p>语法: underscores_in_headers on|off;<br>配置块: http, server, location</p></blockquote></li><li><p>对If-Modified-Since头部的策略处理</p><blockquote><p>语法: if_modified_since [off|exact|before];<br>配置块: http, server, location</p></blockquote></li><li><p>文件未找到时是否记录到error日志</p><blockquote><p>语法: log_not_fount off|on;<br>配置块: http, server, location</p></blockquote></li><li><p>是否匹配相邻的’/‘</p><blockquote><p>语法: merge_slashes on|off;<br>配置块: http, server, location</p></blockquote></li><li><p>DNS解析地址</p><blockquote><p>语法: resolver address …;<br>配置块: http, server, location</p></blockquote></li><li><p>DNS解析地址超时时间</p><blockquote><p>语法: resolver_timeout time;<br>配置块: http, server, location</p></blockquote></li><li><p>返回错误页面时,是否在Server中注明nginx版本</p><blockquote><p>语法: server_tokens on|off;<br>配置块: http, server, location</p></blockquote></li></ul><h2 id="ngx-http-core-module模块提供的变量"><a href="#ngx-http-core-module模块提供的变量" class="headerlink" title="ngx_http_core_module模块提供的变量"></a>ngx_http_core_module模块提供的变量</h2><p><img src="/image/访问上游服务器时可使用的变量.png" alt="访问上游服务器时可使用的变量"></p><h2 id="反向代理服务器的基本原理"><a href="#反向代理服务器的基本原理" class="headerlink" title="反向代理服务器的基本原理"></a>反向代理服务器的基本原理</h2><p>基本原来的流程图如下：</p><p><img src="/image/反向代理服务器转发请求流程.png" alt="反向代理服务器转发请求流程"></p><h2 id="负载均衡的基本配置"><a href="#负载均衡的基本配置" class="headerlink" title="负载均衡的基本配置"></a>负载均衡的基本配置</h2><ul><li><p>upstream块</p><blockquote><p>语法: upstream name {…};<br>配置块: http  </p></blockquote></li><li><p>server  </p><blockquote><p>语法: server name [parameters];<br>配置块: upstream</p></blockquote></li><li><p>ip_hash</p><blockquote><p>语法: ip_hash;<br>配置块: upstream</p></blockquote></li><li><p>样例:</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">upstream</span> tianshenjr &#123;  </span><br><span class="line"></span><br><span class="line">    <span class="comment">#ip_hash; 说明:与weight不可共存;</span></span><br><span class="line"></span><br><span class="line">    <span class="attribute">server</span> dev.tianshenjr.com weight=<span class="number">4</span>;  </span><br><span class="line">    <span class="attribute">server</span> <span class="number">127.0.0.1:8080</span> max_fails=<span class="number">3</span> fail_timeout=<span class="number">30s</span>;  </span><br><span class="line">    <span class="attribute">server</span> unix:/tmp/api.tianshenjr.com;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="section">server</span> &#123;  </span><br><span class="line">    <span class="attribute">location</span> / &#123;  </span><br><span class="line">        <span class="attribute">proxy_pass</span> http://www.tianshenjr.com  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>记录日志时支持的变量</p></li></ul><h2 id="反向代理的基本配置"><a href="#反向代理的基本配置" class="headerlink" title="反向代理的基本配置"></a>反向代理的基本配置</h2><ul><li><p>proxy_pass</p><blockquote><p>语法: proxy_pass URL;<br>配置块: location, if</p></blockquote></li><li><p>proxy_method</p><blockquote><p>语法: proxy_method method;<br>配置块: http, server, location</p></blockquote></li><li><p>proxy_hide_header</p><blockquote><p>语法: proxy_hide_header the_header;<br>配置块: http, server, location</p></blockquote></li><li><p>proxy_pass_header</p><blockquote><p>语法: proxy_pass_header the_header;<br>配置块: http, server, location</p></blockquote></li><li><p>proxy_pass_request_body</p><blockquote><p>语法: proxy_pass_request_body on|off;<br>配置块: http, server, location</p></blockquote></li><li><p>proxy_pass_request_headers</p><blockquote><p>语法: proxy_pass_request_headers on|off;<br>配置块: http, server, location</p></blockquote></li><li><p>proxy_redirect</p><blockquote><p>语法: proxy_redirect [default|off|redirect replacement];<br>配置块: http, server, location</p></blockquote></li><li><p>proxy_next_upstream</p><blockquote><p>语法: proxy_next_upstream [error|timeout|invalid_header|http_500|http_502|http_503|http_504|http_404|off];<br>配置块: http, server, location</p></blockquote></li></ul><p>扩展阅读<br>   <a href="http://wiki.nginx.org/Modules" target="_blank" rel="noopener">http://wiki.nginx.org/Modules</a></p><h1 id="开发HTTP模块"><a href="#开发HTTP模块" class="headerlink" title="开发HTTP模块"></a>开发HTTP模块</h1><h2 id="如何调用HTTP模块"><a href="#如何调用HTTP模块" class="headerlink" title="如何调用HTTP模块"></a>如何调用HTTP模块</h2><p><img src="/image/nginx http模块调用简化流程.png" alt="http模块调用简化流程"></p><h2 id="类型封装"><a href="#类型封装" class="headerlink" title="类型封装"></a>类型封装</h2><ul><li><p>整型</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">intptr_t</span> <span class="keyword">ngx_int_t</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">uintptr_t</span> <span class="keyword">ngx_uint_t</span>;</span><br></pre></td></tr></table></figure></li><li><p>ngx_str_t 数据结构</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">    <span class="keyword">size_t</span>      len;</span><br><span class="line">    u_char      *data;</span><br><span class="line">&#125; <span class="keyword">ngx_str_t</span>;</span><br></pre></td></tr></table></figure></li><li><p>ngx_list_t 数据结构</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">ngx_list_part_s</span> <span class="title">ngx_list_part_t</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">ngx_list</span> _<span class="title">part_s</span>&#123;</span></span><br><span class="line">    <span class="keyword">void</span>                *elts;</span><br><span class="line">    <span class="keyword">ngx_uint_t</span>          nelts;</span><br><span class="line">    <span class="keyword">ngx_list_part_t</span>     *next;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">    <span class="keyword">ngx_list_part_t</span>     *last;</span><br><span class="line">    <span class="keyword">ngx_list_part_t</span>     part;</span><br><span class="line">    <span class="keyword">size_t</span>              size;</span><br><span class="line">    <span class="keyword">ngx_unit_t</span>          nalloc;</span><br><span class="line">    <span class="keyword">ngx_pool_t</span>          *pool;</span><br><span class="line">&#125; <span class="keyword">ngx_list_t</span>;</span><br></pre></td></tr></table></figure></li><li><p>ngx_table_elt_t 数据结构</p></li><li>ngx_buf_t 数据结构</li><li>ngx_chain_t 数据结构</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;nginx配置&quot;&gt;&lt;a href=&quot;#nginx配置&quot; class=&quot;headerlink&quot; title=&quot;nginx配置&quot;&gt;&lt;/a&gt;nginx配置&lt;/h1&gt;&lt;h2 id=&quot;文件路径配置&quot;&gt;&lt;a href=&quot;#文件路径配置&quot; class=&quot;headerlink&quot; title=&quot;文件路径配置&quot;&gt;&lt;/a&gt;文件路径配置&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;访问首页&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;语法： index file1 file2 file3 … ;&lt;br&gt;&lt;br&gt;配置块： http, server, location&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="nginx" scheme="https://cgirl.github.io/categories/nginx/"/>
+    
+    
+      <category term="nginx 负载均衡 配置" scheme="https://cgirl.github.io/tags/nginx-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>lumen建立API项目</title>
+    <link href="https://cgirl.github.io/2017/07/08/lumen/"/>
+    <id>https://cgirl.github.io/2017/07/08/lumen/</id>
+    <published>2017-07-08T08:18:00.000Z</published>
+    <updated>2017-12-08T15:29:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#lumen环境搭建（5.4.X 版本）</p><h2 id="composer及lumen安装"><a href="#composer及lumen安装" class="headerlink" title="composer及lumen安装"></a>composer及lumen安装</h2><p>环境: mac or linux</p><ul><li>使用如下命令进行comoser的安装:  </li></ul><ol><li>curl -sS <a href="https://getcomposer.org/installer" target="_blank" rel="noopener">https://getcomposer.org/installer</a> | php</li><li>mv composer.phar /usr/local/bin/  </li><li>输入composer回车,能正常展示composer的版本及使用方法,即安装成功</li></ol><a id="more"></a><ul><li>使用如下命令进行lumen的项目创建及环境配置</li></ul><ol><li><p>composer create-project –prefer-dist laravel/lumen 项目名称<br>说明:<br>1) 时间可能会有些长,请耐心等待,如果长时间依然没有创建成功。<br>2) 请更换国内镜像或升级composer<br>更换国内镜像: composer config -g repo.packagist composer <a href="https://packagist.phpcomposer.com）" target="_blank" rel="noopener">https://packagist.phpcomposer.com）</a><br>升级composer: composer selfupdate</p></li><li><p>配置数据库信息:<br>lumen的项目配置信息都保存在.env文件中,修改相应的数据库配置信息:</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">DB_CONNECTION=mysql</span><br><span class="line">DB_HOST=<span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>  【项目的mysql数据库服务器地址】</span><br><span class="line">DB_PORT=<span class="number">3306</span>       【mysql对应的端口号】</span><br><span class="line">DB_DATABASE=mabei  【mysql的数据库名称】</span><br><span class="line">DB_USERNAME=root   【mysql的用户名】</span><br><span class="line">DB_PASSWORD=root   【mysql的密码】</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#lumen环境搭建（5.4.X 版本）&lt;/p&gt;
+&lt;h2 id=&quot;composer及lumen安装&quot;&gt;&lt;a href=&quot;#composer及lumen安装&quot; class=&quot;headerlink&quot; title=&quot;composer及lumen安装&quot;&gt;&lt;/a&gt;composer及lumen安装&lt;/h2&gt;&lt;p&gt;环境: mac or linux&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用如下命令进行comoser的安装:  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;curl -sS &lt;a href=&quot;https://getcomposer.org/installer&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://getcomposer.org/installer&lt;/a&gt; | php&lt;/li&gt;
+&lt;li&gt;mv composer.phar /usr/local/bin/  &lt;/li&gt;
+&lt;li&gt;输入composer回车,能正常展示composer的版本及使用方法,即安装成功&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="lumen框架" scheme="https://cgirl.github.io/categories/lumen%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="php 框架 lumen API" scheme="https://cgirl.github.io/tags/php-%E6%A1%86%E6%9E%B6-lumen-API/"/>
+    
+  </entry>
+  
+</feed>
