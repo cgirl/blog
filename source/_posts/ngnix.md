@@ -231,12 +231,12 @@ categories: nginx
 > 配置块: http, server, location
 
 ## ngx_http_core_module模块提供的变量
-![访问上游服务器时可使用的变量](/image/访问上游服务器时可使用的变量.png)
+![访问上游服务器时可使用的变量](/image/nginx/访问上游服务器时可使用的变量.png)
 
 ## 反向代理服务器的基本原理
 基本原来的流程图如下：
 
-![反向代理服务器转发请求流程](/image/反向代理服务器转发请求流程.png)
+![反向代理服务器转发请求流程](/image/nginx/反向代理服务器转发请求流程.png)
 
 ## 负载均衡的基本配置
 - upstream块
@@ -311,7 +311,7 @@ server {
 
 # 开发HTTP模块
 ## 如何调用HTTP模块
-![http模块调用简化流程](/image/nginx http模块调用简化流程.png)
+![http模块调用简化流程](/image/nginx/nginx http模块调用简化流程.png)
 
 ## 类型封装
 - 整型
