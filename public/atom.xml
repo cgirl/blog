@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cgirl.github.io/"/>
-  <updated>2020-06-12T03:42:29.844Z</updated>
+  <updated>2020-06-12T06:05:40.682Z</updated>
   <id>https://cgirl.github.io/</id>
   
   <author>
@@ -20,28 +20,18 @@
     <title>每日计划</title>
     <link href="https://cgirl.github.io/2020/06/12/study/20200612/"/>
     <id>https://cgirl.github.io/2020/06/12/study/20200612/</id>
-    <published>2020-06-12T03:42:29.844Z</published>
-    <updated>2020-06-12T03:42:29.844Z</updated>
+    <published>2020-06-12T06:05:40.682Z</published>
+    <updated>2020-06-12T06:05:40.682Z</updated>
     
-    <content type="html"><![CDATA[<p>2020年6月12日  学习清单</p><table><thead><tr><th>完成与否</th><th>计划学习内容</th><th>内容来源</th><th>实际学习内容</th></tr></thead><tbody><tr><td><input type="checkbox" disabled="disabled"></td><td>链表-LUR缓存</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>栈</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>队列</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>排序-插入&amp;冒泡</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>线性排序</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>二分查找-快排查找</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>二分查找-定位IP省份</td><td>极客时间-数据结构与算法之美</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<h3 id="2020年6月12日-学习清单"><a href="#2020年6月12日-学习清单" class="headerlink" title="2020年6月12日  学习清单"></a>2020年6月12日  学习清单</h3><table><thead><tr><th>完成与否</th><th>计划学习内容</th><th>内容来源</th><th>实际学习内容</th></tr></thead><tbody><tr><td><input type="checkbox" disabled="disabled" checked="checked"></td><td>链表-LUR缓存</td><td>极客时间-数据结构与算法之美</td><td>链表的基础知识，LRU的基本思想。适合初学者，不适合高阶提升</td></tr><tr><td><input type="checkbox" disabled="disabled" checked="checked"></td><td>链表-6大技巧</td><td>极客时间-数据结构与算法之美</td><td>作者给出的链表编写时可以注意和建议的点。初学者入门提醒</td></tr><tr><td><input type="checkbox"></td><td>栈</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>队列</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>排序-插入&amp;冒泡</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>线性排序</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>二分查找-快排查找</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>二分查找-定位IP省份</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td>刷一道算法题-LRU</td><td>牛客网</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;2020年6月12日  学习清单&lt;/p&gt;
-&lt;table&gt;
+        &lt;h3 id=&quot;2020年6月12日-学习清单&quot;&gt;&lt;a href=&quot;#2020年6月12日-学习清单&quot; class=&quot;headerlink&quot; title=&quot;2020年6月12日  学习清单&quot;&gt;&lt;/a&gt;2020年6月12日  学习清单&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;完成与否&lt;/th&gt;
-&lt;th&gt;计划学习内容&lt;/th&gt;
-&lt;th&gt;内容来源&lt;/th&gt;
-&lt;th&gt;实际学习内容&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;in
+&lt;tr
       
     
     </summary>
@@ -50,6 +40,32 @@
     
     
       <category term="学习清单" scheme="https://cgirl.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%B8%85%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员值得上的优秀网站</title>
+    <link href="https://cgirl.github.io/2020/06/12/study/web_666/"/>
+    <id>https://cgirl.github.io/2020/06/12/study/web_666/</id>
+    <published>2020-06-12T05:43:45.124Z</published>
+    <updated>2020-06-12T05:43:45.124Z</updated>
+    
+    <content type="html"><![CDATA[<p>累积推荐程序员值得关注的一些网站，会持续更新。前后无排名：  </p><p><strong>1. 牛客网：常见的算法、大厂面试题，支持在线刷题，程序员求职利器：</strong><br><a href="https://www.nowcoder.com/" target="_blank" rel="noopener">https://www.nowcoder.com/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;累积推荐程序员值得关注的一些网站，会持续更新。前后无排名：  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 牛客网：常见的算法、大厂面试题，支持在线刷题，程序员求职利器：&lt;/strong&gt;&lt;br&gt;&lt;a href=&quot;https://www.nowcoder.com/&quot; target=
+      
+    
+    </summary>
+    
+      <category term="学习收录" scheme="https://cgirl.github.io/categories/%E5%AD%A6%E4%B9%A0%E6%94%B6%E5%BD%95/"/>
+    
+    
+      <category term="程序员-优秀网站" scheme="https://cgirl.github.io/tags/%E7%A8%8B%E5%BA%8F%E5%91%98-%E4%BC%98%E7%A7%80%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
