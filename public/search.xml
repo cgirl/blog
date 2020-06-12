@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[nginx的常用配置与属性]]></title>
+    <url>%2F2020%2F06%2F12%2Fnginx%2Fnginx200610%2F</url>
+    <content type="text"><![CDATA[命令行指令重载-不重新启动nginx的情况下，重新加载新修改的配置文件：nginx -s reload 热部署-业务需要，nginx重新编译增加了新的第三方模块，但是线上环境正在运行，不能冒昧的重启nginx，因为有很多正常请求的还未结束，这种场景下可以使用热部署方式。新产生的请求使用新的nginx，而老的请求暂时使 1000用老的nginx，等待全部老请求执行完毕，再关闭老的nginx：cp nginx nginx.oldkill -USR2 nginx的主进程号kill -WINCH nginx的主进程号]]></content>
+      <categories>
+        <category>技术架构</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[每日计划]]></title>
+    <url>%2F2020%2F06%2F12%2Fstudy%2F20200612%2F</url>
+    <content type="text"><![CDATA[完成与否 计划学习内容 内容来源 实际学习内容 链表-LUR缓存 极客时间-数据结构与算法之美 栈 极客时间-数据结构与算法之美 队列 极客时间-数据结构与算法之美 排序-插入&amp;冒泡 极客时间-数据结构与算法之美 线性排序 极客时间-数据结构与算法之美 二分查找-快排查找 极客时间-数据结构与算法之美 二分查找-定位IP省份 极客时间-数据结构与算法之美]]></content>
+      <categories>
+        <category>每日计划</category>
+      </categories>
+      <tags>
+        <tag>学习清单</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[区块链带来的新机遇]]></title>
     <url>%2F2017%2F12%2F17%2Fqkl%2Fqukuailian171218%2F</url>
     <content type="text"><![CDATA[第2章 区块链带来的新机遇数字货币产业链互联网金融物联网与共享经济新一代基础设施第3章 区块链的应用场景数字货币众筹清算、结算与审计智能合约版权与许可公证与记录第4章 区块链技术原理密码学基础区块链组成共识算法侧链技术]]></content>

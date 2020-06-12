@@ -64,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/theme/
-theme: next
+theme: hexo-theme-Annie
 plugins: hexo-generate-feed
 	
 # Deployment
