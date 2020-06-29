@@ -7,7 +7,7 @@ title: junely-渡渡
 subtitle: 学习笔记，乐于分享，每天进步一点点，坚持是成功的法宝。
 description: php核心，mysql高级，ngnix原理，linux指令
 author: junelyy
-language: zh-Hans 
+language: zh-CN
 timezone:
 avatar: /images/avatar.png
 
@@ -73,3 +73,10 @@ deploy:
   type: git
   repository: https://github.com/cgirl/cgirl.github.io
   branch: master
+
+search:
+  path: search.json
+  zipPath: search.zip
+  versionPath: searchVersion.txt
+  field: post
+  #field: post, page or all
