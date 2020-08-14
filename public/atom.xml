@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cgirl.github.io/"/>
-  <updated>2020-06-29T13:55:25.586Z</updated>
+  <updated>2020-06-30T14:25:42.054Z</updated>
   <id>https://cgirl.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20.06.30</title>
+    <link href="https://cgirl.github.io/2020/06/30/study/20200630/"/>
+    <id>https://cgirl.github.io/2020/06/30/study/20200630/</id>
+    <published>2020-06-30T14:25:42.054Z</published>
+    <updated>2020-06-30T14:25:42.054Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="2020年6月30日-周二-晴"><a href="#2020年6月30日-周二-晴" class="headerlink" title="2020年6月30日 周二 晴"></a>2020年6月30日 周二 晴</h3><h3 id="学习清单"><a href="#学习清单" class="headerlink" title="学习清单"></a>学习清单</h3><table><thead><tr><th>完成与否</th><th>类型</th><th>学习内容</th><th>内容来源</th><th>学习总结</th></tr></thead><tbody><tr><td><input type="checkbox" disabled="disabled" checked="checked"></td><td>周计划</td><td>排序优化</td><td>极客时间-数据结构与算法之美</td><td>取中、随机算法</td></tr><tr><td><input type="checkbox" disabled="disabled" checked="checked"></td><td>周计划</td><td>二分查找-快速查找</td><td>极客时间-数据结构与算法之美</td><td>最简单的二分查找，单纯的值相等查找</td></tr><tr><td><input type="checkbox" disabled="disabled" checked="checked"></td><td>周计划</td><td>二分查找-定位IP省份</td><td>极客时间-数据结构与算法之美</td><td>二分查找变形，相似值查找的几个demo思想</td></tr><tr><td><input type="checkbox" disabled="disabled" checked="checked"></td><td>add漏网之鱼</td><td>跳表-redis使用跳表实现有序集合的原因</td><td>极客时间-数据结构与算法之美</td><td>跳表的数据结构、设计思想和空间、时间复杂度分析</td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>散列表-单词查找案例</td><td>极客时间-数据结构与算法之美</td><td>散列冲突的解决方案-开放寻址之二次探测，没太懂？？</td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>散列表-深入理解</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>散列表+链表分析</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>哈希算法-数据库防脱库</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>哈希算法-分布式系统的应用</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>二叉树-数组结合</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disa bled"></td><td>周计划</td><td>二叉树-与散列表的爱恨情仇</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>红黑树-原因</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>红黑树-如何实现</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>递归树</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>堆和堆排序</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>堆的应用</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled>"></td><td>周计划</td><td>图的表示</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>深度与广度优先搜索</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>字符串匹配-哈希实现</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>字符串匹配-案例-文本编辑器中查找</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>字符串匹配-BM&amp;KMP</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td></td><td>刷一道算法题-LRU</td><td>牛客网</td></tr></tbody></table><hr><h3 id="生活清单时间表"><a href="#生活清单时间表" class="headerlink" title="生活清单时间表"></a>生活清单时间表</h3><table><thead><tr><th>完成与否</th><th>时间</th><th>计划生活清单</th><th>实际执行</th></tr></thead><tbody><tr><td><input type="checkbox" disabled="disabled"></td><td>5:00~6:40</td><td>早起-洗漱、打扫卫生、做饭</td><td>已执行-洗漱时间太长</td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>6:45~7:30</td><td>吃早饭、洗碗、打扫主卧卫生</td><td>已执行，今日大扫除，打扫完毕9:00，超时1.5h</td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>9:30~11:30</td><td>学习</td><td>刷抖音，恨，警告1次</td></tr><tr><td><input type="checkbox" disabled="disabled" checked="true"></td><td>11:30~12:30</td><td>做饭、吃饭、洗涮</td><td>刷抖音，恨，警告1次</td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>12:30~19:00</td><td>学习</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>19:00~21:00</td><td>做饭、吃饭、洗碗、洗澡</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>21:00~22:30</td><td>刷算法</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>22:30~5:00</td><td>睡觉</td></tr></tbody></table><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;2020年6月30日-周二-晴&quot;&gt;&lt;a href=&quot;#2020年6月30日-周二-晴&quot; class=&quot;headerlink&quot; title=&quot;2020年6月30日 周二 晴&quot;&gt;&lt;/a&gt;2020年6月30日 周二 晴&lt;/h3&gt;&lt;h3 id=&quot;学习清单&quot;&gt;&lt;a href
+      
+    
+    </summary>
+    
+      <category term="每日计划" scheme="https://cgirl.github.io/categories/%E6%AF%8F%E6%97%A5%E8%AE%A1%E5%88%92/"/>
+    
+    
+      <category term="学习清单" scheme="https://cgirl.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%B8%85%E5%8D%95/"/>
+    
+  </entry>
   
   <entry>
     <title>20.06.29</title>
@@ -80,31 +105,6 @@
       
       
         &lt;h3 id=&quot;2020年7月01日-周&quot;&gt;&lt;a href=&quot;#2020年7月01日-周&quot; class=&quot;headerlink&quot; title=&quot;2020年7月01日 周&quot;&gt;&lt;/a&gt;2020年7月01日 周&lt;/h3&gt;&lt;h3 id=&quot;学习清单&quot;&gt;&lt;a href=&quot;#学习清单&quot; cla
-      
-    
-    </summary>
-    
-      <category term="每日计划" scheme="https://cgirl.github.io/categories/%E6%AF%8F%E6%97%A5%E8%AE%A1%E5%88%92/"/>
-    
-    
-      <category term="学习清单" scheme="https://cgirl.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%B8%85%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20.06.30</title>
-    <link href="https://cgirl.github.io/2020/06/29/study/20200630/"/>
-    <id>https://cgirl.github.io/2020/06/29/study/20200630/</id>
-    <published>2020-06-29T13:50:19.133Z</published>
-    <updated>2020-06-29T13:50:19.133Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="2020年6月30日-周二-晴"><a href="#2020年6月30日-周二-晴" class="headerlink" title="2020年6月30日 周二 晴"></a>2020年6月30日 周二 晴</h3><h3 id="学习清单"><a href="#学习清单" class="headerlink" title="学习清单"></a>学习清单</h3><table><thead><tr><th>完成与否</th><th>类型</th><th>学习内容</th><th>内容来源</th><th>学习总结</th></tr></thead><tbody><tr><td><input type="checkbox" disabled="disabled" checked="checked"></td><td>周计划</td><td>排序优化</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>二分查找-快排查找</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>二分查找-定位IP省份</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>散列表-单词查找案例</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>散列表-深入理解</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>散列表+链表分析</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>哈希算法-数据库防脱库</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>哈希算法-分布式系统的应用</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>二叉树-数组结合</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>二叉树-与散列表的爱恨情仇</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>红黑树-原因</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>红黑树-如何实现</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>递归树</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>堆和堆排序</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>堆的应用</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled>"></td><td>周计划</td><td>图的表示</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>深度与广度优先搜索</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>字符串匹配-哈希实现</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>字符串匹配-案例-文本编辑器中查找</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>周计划</td><td>字符串匹配-BM&amp;KMP</td><td>极客时间-数据结构与算法之美</td><td></td></tr><tr><td><input type="checkbox"></td><td></td><td>刷一道算法题-LRU</td><td>牛客网</td></tr></tbody></table><hr><h3 id="生活清单时间表"><a href="#生活清单时间表" class="headerlink" title="生活清单时间表"></a>生活清单时间表</h3><table><thead><tr><th>完成与否</th><th>时间</th><th>计划生活清单</th><th>实际执行</th></tr></thead><tbody><tr><td><input type="checkbox" disabled="disabled"></td><td>5:00~6:40</td><td>早起-洗漱、打扫卫生、做饭</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>6:45~7:30</td><td>吃早饭、洗碗、打扫主卧卫生</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>7:30~11:30</td><td>学习</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled" checked="true"></td><td>11:30~12:30</td><td>做饭、吃饭、洗涮</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>12:30~19:00</td><td>学习</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>19:00~21:00</td><td>做饭、吃饭、洗碗、洗澡</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>21:00~22:30</td><td>刷算法</td><td></td></tr><tr><td><input type="checkbox" disabled="disabled"></td><td>22:30~5:00</td><td>睡觉</td></tr></tbody></table><hr>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;2020年6月30日-周二-晴&quot;&gt;&lt;a href=&quot;#2020年6月30日-周二-晴&quot; class=&quot;headerlink&quot; title=&quot;2020年6月30日 周二 晴&quot;&gt;&lt;/a&gt;2020年6月30日 周二 晴&lt;/h3&gt;&lt;h3 id=&quot;学习清单&quot;&gt;&lt;a href
       
     
     </summary>
