@@ -73,7 +73,7 @@ index_generator:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/theme/
-theme: hexo-theme-Annie
+theme: annie
 plugins: hexo-generate-feed
 	
 # Deployment
