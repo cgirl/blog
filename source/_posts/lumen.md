@@ -3,6 +3,11 @@ title: lumen建立API项目
 date: '2017-07-08 16:18'  
 tags: php 框架 lumen API
 categories: lumen框架
+background_image:
+  mode: random #normal or random
+  #normal_url: https://source.unsplash.com/collection/954550/1920x1080
+  random_max: 110
+  random_url: /img/Random-img/
 ---
 #lumen环境搭建（5.4.X 版本）
 
@@ -23,7 +28,7 @@ categories: lumen框架
    2) 请更换国内镜像或升级composer  
    更换国内镜像: composer config -g repo.packagist composer https://packagist.phpcomposer.com）  
    升级composer: composer selfupdate
-   
+
 2. 配置数据库信息:  
    lumen的项目配置信息都保存在.env文件中,修改相应的数据库配置信息:
    ```php
